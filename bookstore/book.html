@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Book Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel Section -->
+    <section id="carousel">
+        <div id="bookCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#bookCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bookCarousel" data-slide-to="1"></li>
+                <li data-target="#bookCarousel" data-slide-to="2"></li>
+                <li data-target="#bookCarousel" data-slide-to="3"></li>
+                <li data-target="#bookCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/256374/pexels-photo-256374.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="Featured Book 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Featured Book 1</h5>
+                        <p>Special Offer</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/6135340/pexels-photo-6135340.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="Featured Book 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Featured Book 2</h5>
+                        <p>Bestseller</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/3646105/pexels-photo-3646105.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="Featured Book 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Featured Book 3</h5>
+                        <p>New Arrival</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="Featured Book 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Featured Book 4</h5>
+                        <p>Limited Edition</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/1058717/pexels-photo-1058717.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="Featured Book 5">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Featured Book 5</h5>
+                        <p>Editor's Pick</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#bookCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#bookCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+   <!-- Books Grid Section -->
+<section id="books" class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81eB+7+CkUL.jpg" class="card-img-top" alt="To Kill a Mockingbird">
+                <div class="card-body">
+                    <h5 class="card-title">To Kill a Mockingbird</h5>
+                    <p class="card-text">Author: Harper Lee</p>
+                    <p class="card-text">$14.99</p>
+                    <p class="card-text">A novel about the serious issues of rape and racial inequality.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91zrK-hB4LL.jpg" class="card-img-top" alt="1984">
+                <div class="card-body">
+                    <h5 class="card-title">1984</h5>
+                    <p class="card-text">Author: George Orwell</p>
+                    <p class="card-text">$19.99</p>
+                    <p class="card-text">A dystopian social science fiction novel and cautionary tale.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91S4xk70f0L.jpg" class="card-img-top" alt="The Great Gatsby">
+                <div class="card-body">
+                    <h5 class="card-title">The Great Gatsby</h5>
+                    <p class="card-text">Author: F. Scott Fitzgerald</p>
+                    <p class="card-text">$10.99</p>
+                    <p class="card-text">A story of the young and mysterious millionaire Jay Gatsby.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91pR9wKJ3zL.jpg" class="card-img-top" alt="Moby Dick">
+                <div class="card-body">
+                    <h5 class="card-title">Moby Dick</h5>
+                    <p class="card-text">Author: Herman Melville</p>
+                    <p class="card-text">$11.99</p>
+                    <p class="card-text">The narrative of Captain Ahab's obsessive quest to kill the white whale, Moby Dick.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81bG9zJNIRL.jpg" class="card-img-top" alt="Pride and Prejudice">
+                <div class="card-body">
+                    <h5 class="card-title">Pride and Prejudice</h5>
+                    <p class="card-text">Author: Jane Austen</p>
+                    <p class="card-text">$9.99</p>
+                    <p class="card-text">A romantic novel that charts the emotional development of the protagonist Elizabeth Bennet.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81aYvcLDekL.jpg" class="card-img-top" alt="War and Peace">
+                <div class="card-body">
+                    <h5 class="card-title">War and Peace</h5>
+                    <p class="card-text">Author: Leo Tolstoy</p>
+                    <p class="card-text">$13.99</p>
+                    <p class="card-text">A novel that chronicles the French invasion of Russia and the impact of the Napoleonic era.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL.jpg" class="card-img-top" alt="The Catcher in the Rye">
+                <div class="card-body">
+                    <h5 class="card-title">The Catcher in the Rye</h5>
+                    <p class="card-text">Author: J.D. Salinger</p>
+                    <p class="card-text">$12.99</p>
+                    <p class="card-text">A story about teenage alienation and the critique of superficiality in society.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91SZSW8qSsL.jpg" class="card-img-top" alt="The Hobbit">
+                <div class="card-body">
+                    <h5 class="card-title">The Hobbit</h5>
+                    <p class="card-text">Author: J.R.R. Tolkien</p>
+                    <p class="card-text">$15.99</p>
+                    <p class="card-text">A fantasy novel and children's book about the adventures of Bilbo Baggins.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/91hhCXj9dbL.jpg" class="card-img-top" alt="The Lord of the Rings">
+                <div class="card-body">
+                    <h5 class="card-title">The Lord of the Rings</h5>
+                    <p class="card-text">Author: J.R.R. Tolkien</p>
+                    <p class="card-text">$29.99</p>
+                    <p class="card-text">An epic high-fantasy novel about the quest to destroy the One Ring.</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-secondary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Online Book Store</p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#" data-toggle="modal" data-target="#contactModal">Contact Us</a>
+        <div class="mt-2">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" class="form-control" id="contact-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" class="form-control" id="contact-email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea class="form-control" id="contact-message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // You can add your custom JS here if needed
+        });
+    </script>
+</body>
+
+</html>
